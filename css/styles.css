@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+  background-color: peachpuff;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pacifico-font {
+  font-family: 'Pacifico', cursive;
+}
+
+.header > h1 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  border: 3px solid #25323b;
+  cursor: pointer;
+}
+
+.btn-new {
+  font-size: 2rem;
+  font-weight: 100;
+  border-radius: 15px;
+  background-color: #c2baba;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-new:hover,
+.btn-add:hover {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  transform: scale(1.1);
+}
+
+.btn-add {
+  font-size: 1.6rem;
+  font-weight: 100;
+  border-radius: 15px;
+  justify-self: center;
+  align-self: center;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 2rem;
+  border: 5px solid #25323b;
+  border-radius: 15px;
+  width: 20%;
+  background-color: #79b3f1;
+}
+
+.popup-head {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.popup-head > .title {
+  font-size: 2rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+.close {
+  font-size: 1.5rem;
+  border: 2px solid #25323b;
+  border-radius: 5px;
+  background-color: #f17979;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.close:hover {
+  transform: scale(1.1);
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.library-container {
+  width: 95%;
+  margin: 2% auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  border: 5px solid #25323b;
+  border-radius: 20px;
+  margin: 0 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 300px;
+  height: 300px;
+  transition: all 0.2s ease-in-out;
+}
+
+.book-read {
+  background-color: #94f179 !important;
+}
+
+.book-not-read {
+  background-color: #f17979 !important;
+}
+
+.book:hover {
+  transform: scale(1.2);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.book > p {
+  margin: 0%;
+  font-size: 1.4rem;
+}
+
+.book > h4 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.book > button {
+  text-align: center;
+  color: black;
+  display: inline-block;
+  border: 2px solid #25323b;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  width: 120px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.book > button:hover {
+  transform: scale(1.1);
+}
+.read {
+  background-color: #94f179 !important;
+}
+
+.not-read {
+  background-color: #f17979 !important;
+}
+
+input[type='text'],
+input[type='number'] {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.6rem;
+  padding: 0.2rem;
+  margin: 0.2rem 0;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.checkbox-container {
+  font-size: 1.6rem;
+}
+
+.checkbox-container input[type='checkbox'] {
+  transform: scale(2);
+}
+
+.display {
+  display: block;
+}

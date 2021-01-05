@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Library App</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="pacifico-font">Library App</h1>
+      <button class="btn btn-new pacifico-font" id="new-button">+ Add new book</button>
+    </header>
+
+    <div class="popup">
+      <div class="popup-content">
+        <div class="popup-head">
+          <h4 class="title pacifico-font">New Book</h4>
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="popup-body">
+          <form id="form" name="add-book">
+            <div class="form-control">
+              <input id="title" name="title" type="text" placeholder="Title" required />
+              <input id="author" name="author" type="text" placeholder="Author" required />
+              <input id="pages" name="pages" type="number" placeholder="Number of pages" required />
+              <label for="read" class="checkbox-container pacifico-font">
+                Read:
+                <input id="read" name="read" type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <button class="btn btn-add pacifico-font" type="submit" form="book-form" id="add-button">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="library-container"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
