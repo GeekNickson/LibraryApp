@@ -1,2 +1,6 @@
-# LibraryApp
- Small app that lets you manage you library
+# Library App
+ Небольшое веб-приложение для управления библиотекой
+#### Используемые технологии
+ * HTML
+ * CSS
+ * JavaScript
