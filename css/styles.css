@@ -72,6 +72,7 @@ p {
   font-size: 1.6rem;
   font-weight: 100;
   border-radius: 15px;
+  background-color: #c2baba;
   justify-self: center;
   align-self: center;
   box-sizing: border-box;
@@ -149,6 +150,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  text-align: center;
   background-color: white;
   border: 5px solid #25323b;
   border-radius: 20px;
@@ -182,6 +184,7 @@ p {
   color: black;
   display: inline-block;
   border: 2px solid #25323b;
+  background-color: #c2baba;
   border-radius: 10px;
   font-size: 1.5rem;
   width: 120px;
